@@ -7,7 +7,7 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            ISortingAlgorithm algorithm = new CountingSort();
+            ISortingAlgorithm algorithm = new SelectionSort();
             Console.WriteLine(string.Join(", ", algorithm.Sort(new int[] { 2, 3, -1,-2, 5 })));
         }
     }

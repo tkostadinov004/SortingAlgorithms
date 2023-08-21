@@ -1,15 +1,10 @@
 ﻿using SortingAlgorithms.Contracts.Abstracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SortingAlgorithms.Algorithms
 {
     public class MergeSort : MergeSortAlgorithm
     {
-        public override int[] Sort(IEnumerable<int> items)
+        public override IEnumerable<int> Sort(IEnumerable<int> items)
         {
             return this.SortRec(items.ToArray());
         }
